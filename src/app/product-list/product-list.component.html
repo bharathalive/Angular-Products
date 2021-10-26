@@ -1,0 +1,28 @@
+<h2>Documents</h2>
+<p>Search Documents or Select Category</p>
+
+<div class="sidebar">
+  <a class="" *ngFor="let product of books" #demo (click)="filterDocument(demo,product.id)">
+    {{ product.name}}
+  </a>
+</div>
+
+<div class="content">
+  <div class="form-outline pd-t-r">
+    <input type="search" id="form1" (input)="SearchDocument($event.target)" class="form-control" placeholder="Start Typing Document Name here.."
+           aria-label="Search" />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div *ngFor="let product of productsUpdated" class="col-sm-3 PDR">
+        <div class="row-box mg-10">
+          <div class="col-sm pull-right {{product.color}}">{{product.Title}}</div>
+          <div class="pro-name">{{product.name}}</div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+

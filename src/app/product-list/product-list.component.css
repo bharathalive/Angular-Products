@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans';
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: absolute;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: #000000;
+}
+
+.sidebar a.active span,
+.sidebar a span:hover {
+  color: #000000;
+}
+
+div.content {
+  padding-left: 215px;
+  height: 1000px;
+  background-color: #f1f1f1;
+}
+
+.pull-right {
+  padding: 6px 20px 6px 20px;
+  text-align: center;
+  border: 1px #000;
+  border-radius: 10px;
+  margin-left: auto;
+  font-size: 13px;
+}
+
+.pro-name {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pd-t-r {
+  padding: 10px 10px 0 0;
+}
+
+.mg-10 {
+  margin: 0 10px 10px 0;
+}
+
+.PDR {
+  padding:0;
+}
+
+.pinkBG {
+  background-color: lightpink;
+}
+
+.purpleBG {
+  background-color: #CBC3E3;
+}
+
+.greenBG {
+  background-color: lightgreen;
+}
+
+.blueBG {
+  background-color: lightblue;
+}
+
+.row-box {
+  padding: 10px;
+  border: 1px;
+  border-radius: 10px;
+  height:auto;
+  background-color: #ffff;
+  flex-direction: column;
+  display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;padding-left: 10px;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
