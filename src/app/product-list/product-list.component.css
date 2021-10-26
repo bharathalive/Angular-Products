@@ -94,6 +94,8 @@ div.content {
   display: flex;
 }
 
+/* media Query Starts */
+
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
